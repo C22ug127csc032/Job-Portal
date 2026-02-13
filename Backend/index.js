@@ -23,5 +23,5 @@ app.get("/",(req,res)=>{
     res.send("Job Portal Backend is running");
 })
 app.listen(port,()=>{
-    console.log(`Server is running on port http://localhost:${port}`);
+    console.log(`Server is running on port ${port}`);
 });
