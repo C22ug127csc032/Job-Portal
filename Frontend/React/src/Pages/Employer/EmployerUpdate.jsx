@@ -15,7 +15,7 @@ function EmployerUpdate() {
     useEffect(()=>{
         const fetchProfile=async()=>{
             try {
-                const res=await fetch("http://localhost:3000/employer/profile",{
+                const res=await fetch("https://job-portal-omy9.onrender.com/employer/profile",{
                     method:"GET",
                     headers:{"Content-Type":"application/json",
                         authorization:`Bearer ${token}`
@@ -35,7 +35,7 @@ function EmployerUpdate() {
     }
     const handleSubmit=async(e)=>{
         e.preventDefault()
-        const res=await fetch("http://localhost:3000/employer/profile",{
+        const res=await fetch("https://job-portal-omy9.onrender.com/employer/profile",{
             method:"PUT",
             headers:{"Content-Type":"application/json",
                 authorization:`Bearer ${token}`

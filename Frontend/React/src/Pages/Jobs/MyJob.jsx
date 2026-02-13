@@ -10,7 +10,7 @@ function MyJob() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch("http://localhost:3000/job/my-job", {
+        const res = await fetch("https://job-portal-omy9.onrender.com/job/my-job", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -29,7 +29,7 @@ function MyJob() {
     if (!confirmDelete) return;
         try {
             const token=localStorage.getItem("token")
-            const res=await fetch(`http://localhost:3000/job/${id}`,{
+            const res=await fetch(`https://job-portal-omy9.onrender.com/job/${id}`,{
                 method:"DELETE",
                 headers:{
                      Authorization: `Bearer ${token}`,

@@ -18,7 +18,7 @@ function CreateJob() {
     const handleSubmit=async(e)=>{
         e.preventDefault()
          const token=localStorage.getItem("token")
-        const res=await fetch("http://localhost:3000/job/",{
+        const res=await fetch("https://job-portal-omy9.onrender.com/job/",{
             method:"POST",
             headers:{"Content-Type":"application/json",
                 Authorization:`Bearer ${token}`

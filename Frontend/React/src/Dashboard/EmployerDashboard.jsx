@@ -13,7 +13,7 @@ function EmployerNavbar() {
       if (!token) return;
 
       try {
-        const res = await fetch("http://localhost:3000/employer/profile", {
+        const res = await fetch("https://job-portal-omy9.onrender.com/employer/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -29,7 +29,7 @@ function EmployerNavbar() {
     const fetchEmployerJobs = async () => {
       if (!token) return;
       try {
-        const res = await fetch("http://localhost:3000/job/my-job", {
+        const res = await fetch("https://job-portal-omy9.onrender.com/job/my-job", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -53,7 +53,7 @@ function EmployerNavbar() {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/job/${id}`, {
+      const res = await fetch(`https://job-portal-omy9.onrender.com/job/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

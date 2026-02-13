@@ -5,7 +5,7 @@ function EmployerForgotPassword() {
     const [email,setEmail]=useState("")
     const handleSubmit=async (e)=>{
         e.preventDefault()
-        const res = await fetch("http://localhost:3000/employer/forgot-password",{
+        const res = await fetch("https://job-portal-omy9.onrender.com/employer/forgot-password",{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email })

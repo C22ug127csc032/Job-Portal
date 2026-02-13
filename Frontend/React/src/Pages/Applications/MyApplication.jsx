@@ -17,7 +17,7 @@ function MyApplication() {
          const getMyApplication=async()=>{
       try {
         const token=localStorage.getItem("token")
-        const res=await fetch("http://localhost:3000/apply",{
+        const res=await fetch("https://job-portal-omy9.onrender.com/apply",{
           method:"GET",
           headers:{
             Authorization:`Bearer ${token}`

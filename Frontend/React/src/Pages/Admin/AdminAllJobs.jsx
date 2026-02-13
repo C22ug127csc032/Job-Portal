@@ -11,7 +11,7 @@ function AdminAllJobs() {
 
   const fetchAllJobs = async () => {
     try {
-      const res = await fetch("http://localhost:3000/job", {
+      const res = await fetch("https://job-portal-omy9.onrender.com/job", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

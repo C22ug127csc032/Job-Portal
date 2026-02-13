@@ -19,7 +19,7 @@ function UpdateJob() {
     useEffect(()=>{
         const fetchJob=async()=>{
             try {
-                const res=await fetch(`http://localhost:3000/job/${id}`)
+                const res=await fetch(`https://job-portal-omy9.onrender.com/job/${id}`)
                 const data=await res.json()
                 if (res.ok) {
                 setFormData({
@@ -49,7 +49,7 @@ function UpdateJob() {
         e.preventDefault()
     try {
          const token=localStorage.getItem("token")
-      const res= await fetch(`http://localhost:3000/job/${id}`,{
+      const res= await fetch(`https://job-portal-omy9.onrender.com/job/${id}`,{
             method:"PUT",
             headers:{"Content-Type":"application/json",
                 authorization:`Bearer ${token}`

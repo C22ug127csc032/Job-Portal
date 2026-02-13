@@ -66,7 +66,7 @@ const forgotPassword=async(req,res)=>{
     user.resetPasswordToken=resetToken;
     user.resetPasswordExpire=Date.now()+10*60*1000;
     await user.save()
-    const resetUrl= `http://localhost:5173/reset-password/${resetToken}`;
+    const resetUrl= `https://job-portal-omy9.onrender.com/reset-password/${resetToken}`;
 
     const transporter=nodemailer.createTransport({
       service:"gmail",

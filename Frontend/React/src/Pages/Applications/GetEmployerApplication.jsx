@@ -15,7 +15,7 @@ function EmployerApplications() {
 
     const fetchApplications = async () => {
       try {
-        const res = await fetch("http://localhost:3000/apply/employer", {
+        const res = await fetch("https://job-portal-omy9.onrender.com/apply/employer", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -36,7 +36,7 @@ function EmployerApplications() {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        `http://localhost:3000/apply/status/${applicationId}`,
+        `https://job-portal-omy9.onrender.com/apply/status/${applicationId}`,
         {
           method: "PUT",
           headers: {

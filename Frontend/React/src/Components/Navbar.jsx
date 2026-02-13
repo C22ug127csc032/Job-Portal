@@ -11,7 +11,7 @@ function Navbar() {
     const checkProfile = async () => {
       if (!token) return;
       try {
-        const res = await fetch("http://localhost:3000/userprofile/profile", {
+        const res = await fetch("https://job-portal-omy9.onrender.com/userprofile/profile", {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
         });

@@ -11,7 +11,7 @@ function EmployerProfile() {
     useEffect(()=>{
         const fetchProfile=async()=>{
         try {
-            const res=await fetch("http://localhost:3000/employer/profile",{
+            const res=await fetch("https://job-portal-omy9.onrender.com/profile",{
                 method:"GET",
                 headers:{"Content-Type":"application/json",
                     authorization:`Bearer ${token}`

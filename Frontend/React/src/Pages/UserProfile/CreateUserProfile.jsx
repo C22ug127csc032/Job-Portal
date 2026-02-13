@@ -25,7 +25,7 @@ function CreateUserProfile() {
     e.preventDefault();
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:3000/userprofile/", {
+    const response = await fetch("https://job-portal-omy9.onrender.com/userprofile/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -8,7 +8,7 @@ const navigate=useNavigate()
   useEffect(()=>{
     const getAllJobs=async()=>{
       try {
-        const res=await fetch("http://localhost:3000/job",{
+        const res=await fetch("https://job-portal-omy9.onrender.com/job",{
           method:"GET",
           headers:{"Content-type":"application/json"}
         })
@@ -29,7 +29,7 @@ const navigate=useNavigate()
     return;
   }
     try {
-      const res=await fetch(`http://localhost:3000/apply/${jobId}`,{
+      const res=await fetch(`https://job-portal-omy9.onrender.com/apply/${jobId}`,{
         method:"POST",
         headers:{"content-Type":"application/json",
         Authorization: `Bearer ${token}`,

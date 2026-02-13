@@ -11,7 +11,7 @@ function PendingJobs() {
 
   const fetchPendingJobs = async () => {
     const res = await fetch(
-      "http://localhost:3000/admin/pending-job",
+      "https://job-portal-omy9.onrender.com/admin/pending-job",
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -22,7 +22,7 @@ function PendingJobs() {
   };
 
   const approveJob = async (id) => {
-    await fetch(`http://localhost:3000/admin/approve/${id}`, {
+    await fetch(`https://job-portal-omy9.onrender.com/admin/approve/${id}`, {
       method: "PUT",
       headers: { Authorization: `Bearer ${token}` },
     });

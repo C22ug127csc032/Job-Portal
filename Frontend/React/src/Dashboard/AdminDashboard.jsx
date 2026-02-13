@@ -14,7 +14,7 @@ function AdminDashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("http://localhost:3000/job", {
+      const res = await fetch("https://job-portal-omy9.onrender.com/job", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -32,7 +32,7 @@ function AdminDashboard() {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        "http://localhost:3000/admin/pending-job",
+        "https://job-portal-omy9.onrender.com/admin/pending-job",
         {
           headers: {
             Authorization: `Bearer ${token}`,

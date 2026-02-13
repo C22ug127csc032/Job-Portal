@@ -16,7 +16,7 @@ function GetAllApplication() {
 
     const fetchApplications = async () => {
       try {
-        const res = await fetch("http://localhost:3000/apply/all", {
+        const res = await fetch("https://job-portal-omy9.onrender.com/apply/all", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`

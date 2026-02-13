@@ -14,7 +14,7 @@ function EmployerLogin() {
     const handleSubmit=async (e)=>{
         e.preventDefault()
 
-        const res=await fetch("http://localhost:3000/employer/login",{
+        const res=await fetch("https://job-portal-omy9.onrender.com/employer/login",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(formData)
